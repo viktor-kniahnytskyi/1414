@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day Card</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #fdd7e4; /* світло рожевий тон */
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .heart-container {
+      position: relative;
+    }
+
+    .heart {
+      width: 350px; /* збільшення розміру серця */
+      height: auto; /* розмір може бути змінений відповідно до фото */
+      margin: 50px auto;
+      animation: heartbeat 1s infinite alternate;
+    }
+
+    @keyframes heartbeat {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.1);
+      }
+    }
+
+    .greeting {
+      position: absolute;
+      top: 34%; /* позиція надпису на серці */
+      
+      font-family: Arial, sans-serif;
+      color: #fff;
+      font-size: 24px; /* збільшення розміру тексту */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      animation: pulse 1s infinite alternate; /* анімація для тексту */
+    }
+
+    @keyframes pulse {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.1);
+      }
+    }
+
+    h1, p {
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="heart-container">
+      <img class="heart" src="heart.png" alt="Heart Image"> <!-- Додайте посилання на фото серця -->
+      <p class="greeting">Вітаю з Днем святого Валентина!</p>
+    </div>
+    <p>Ти - моя найкраща половинка.</p>
+    <p>Ти - моє світло в найтемніші дні.</p>
+    <p>Ти - моє щастя, моє кохання, моя радість.</p>
+    <p>Твоя посмішка робить мій день кращим.</p>
+    
+    <p>Твій Вітя.</p>
+  </div>
+</body>
+</html>
